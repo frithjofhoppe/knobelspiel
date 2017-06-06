@@ -11,7 +11,7 @@ using System.IO;
 
 namespace Knobelprogramm
 {
-    //Change
+    
     public partial class Form1 : Form
     {
         public int nUpDownRingeValue = 3;
