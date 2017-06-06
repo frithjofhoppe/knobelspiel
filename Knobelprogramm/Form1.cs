@@ -71,7 +71,7 @@ namespace Knobelprogramm
 
                 r.Add(generiereRing(xPos, yPos, (widthTotal - (widthSpezific * i)), heightSpezific));
 
-                xPos -= widthSpezific;
+                xPos += widthSpezific;
                 yPos -= heightSpezific;
             }
 
