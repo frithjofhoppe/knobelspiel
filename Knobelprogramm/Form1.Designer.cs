@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.pnlStickLeft = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnGetLeft = new System.Windows.Forms.Button();
+            this.btnGetMiddle = new System.Windows.Forms.Button();
+            this.btnGetRight = new System.Windows.Forms.Button();
+            this.btnSetLeft = new System.Windows.Forms.Button();
+            this.gtnSetMiddle = new System.Windows.Forms.Button();
+            this.btnSetRight = new System.Windows.Forms.Button();
             this.pnlAroundLeft = new System.Windows.Forms.Panel();
             this.pnlAroundMiddle = new System.Windows.Forms.Panel();
             this.pnlStickMiddle = new System.Windows.Forms.Panel();
@@ -61,59 +61,60 @@
             this.pnlStickLeft.Size = new System.Drawing.Size(19, 402);
             this.pnlStickLeft.TabIndex = 0;
             // 
-            // button1
+            // btnGetLeft
             // 
-            this.button1.Location = new System.Drawing.Point(74, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Aufnehmen";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGetLeft.Location = new System.Drawing.Point(74, 9);
+            this.btnGetLeft.Name = "btnGetLeft";
+            this.btnGetLeft.Size = new System.Drawing.Size(75, 23);
+            this.btnGetLeft.TabIndex = 2;
+            this.btnGetLeft.Text = "Aufnehmen";
+            this.btnGetLeft.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnGetMiddle
             // 
-            this.button2.Location = new System.Drawing.Point(285, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Aufnehmen";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGetMiddle.Location = new System.Drawing.Point(285, 9);
+            this.btnGetMiddle.Name = "btnGetMiddle";
+            this.btnGetMiddle.Size = new System.Drawing.Size(75, 23);
+            this.btnGetMiddle.TabIndex = 3;
+            this.btnGetMiddle.Text = "Aufnehmen";
+            this.btnGetMiddle.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnGetRight
             // 
-            this.button3.Location = new System.Drawing.Point(495, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Aufnehmen";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGetRight.Location = new System.Drawing.Point(495, 9);
+            this.btnGetRight.Name = "btnGetRight";
+            this.btnGetRight.Size = new System.Drawing.Size(75, 23);
+            this.btnGetRight.TabIndex = 4;
+            this.btnGetRight.Text = "Aufnehmen";
+            this.btnGetRight.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSetLeft
             // 
-            this.button4.Location = new System.Drawing.Point(74, 446);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Ablegen";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSetLeft.Location = new System.Drawing.Point(74, 446);
+            this.btnSetLeft.Name = "btnSetLeft";
+            this.btnSetLeft.Size = new System.Drawing.Size(75, 23);
+            this.btnSetLeft.TabIndex = 5;
+            this.btnSetLeft.Text = "Ablegen";
+            this.btnSetLeft.UseVisualStyleBackColor = true;
+            this.btnSetLeft.Click += new System.EventHandler(this.btnSetLeft_Click);
             // 
-            // button5
+            // gtnSetMiddle
             // 
-            this.button5.Location = new System.Drawing.Point(285, 446);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Ablegen";
-            this.button5.UseVisualStyleBackColor = true;
+            this.gtnSetMiddle.Location = new System.Drawing.Point(285, 446);
+            this.gtnSetMiddle.Name = "gtnSetMiddle";
+            this.gtnSetMiddle.Size = new System.Drawing.Size(75, 23);
+            this.gtnSetMiddle.TabIndex = 6;
+            this.gtnSetMiddle.Text = "Ablegen";
+            this.gtnSetMiddle.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnSetRight
             // 
-            this.button6.Location = new System.Drawing.Point(495, 446);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Ablegen";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSetRight.Location = new System.Drawing.Point(495, 446);
+            this.btnSetRight.Name = "btnSetRight";
+            this.btnSetRight.Size = new System.Drawing.Size(75, 23);
+            this.btnSetRight.TabIndex = 7;
+            this.btnSetRight.Text = "Ablegen";
+            this.btnSetRight.UseVisualStyleBackColor = true;
             // 
             // pnlAroundLeft
             // 
@@ -229,12 +230,12 @@
             this.Controls.Add(this.pnlAroundRight);
             this.Controls.Add(this.pnlAroundMiddle);
             this.Controls.Add(this.pnlAroundLeft);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSetRight);
+            this.Controls.Add(this.gtnSetMiddle);
+            this.Controls.Add(this.btnSetLeft);
+            this.Controls.Add(this.btnGetRight);
+            this.Controls.Add(this.btnGetMiddle);
+            this.Controls.Add(this.btnGetLeft);
             this.Name = "Form1";
             this.Text = "Türme von Hanoi";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -251,12 +252,12 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlStickLeft;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnGetLeft;
+        private System.Windows.Forms.Button btnGetMiddle;
+        private System.Windows.Forms.Button btnGetRight;
+        private System.Windows.Forms.Button btnSetLeft;
+        private System.Windows.Forms.Button gtnSetMiddle;
+        private System.Windows.Forms.Button btnSetRight;
         private System.Windows.Forms.Panel pnlAroundLeft;
         private System.Windows.Forms.Panel pnlAroundMiddle;
         private System.Windows.Forms.Panel pnlStickMiddle;
