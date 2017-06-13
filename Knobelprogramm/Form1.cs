@@ -52,9 +52,9 @@ namespace Knobelprogramm
 
             switch (btn.Name[6])
             {
-                case 'L': changeTakeBelong(leftStack); removeTake(leftStack); break;
-                case 'M': changeTakeBelong(middleStack); removeTake(middleStack); break;
-                case 'R': changeTakeBelong(rightStack); removeTake(rightStack); break;
+                case 'L': re = changeTakeBelong(leftStack); removeTake(leftStack); break;
+                case 'M': re = changeTakeBelong(middleStack); removeTake(middleStack); break;
+                case 'R': re = changeTakeBelong(rightStack); removeTake(rightStack); break;
                 default: break;
             }
 
@@ -63,9 +63,14 @@ namespace Knobelprogramm
 
         public Panel changeTakeBelong(List<Panel> aktuell)
         {
-            List<Panel> re = aktuell;
+            Panel r = new Panel();
 
-            cache = re[re.Count - 1];
+            if (aktuell.Count != 0)
+            {
+                r = aktuell[aktuell.Count - 1];
+            }
+
+            return r;
         }
 
         public void removeTake(List<Panel> aktuell)
