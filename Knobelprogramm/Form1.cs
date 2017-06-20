@@ -73,6 +73,11 @@ namespace Knobelprogramm
             return r;
         }
 
+        public Panel changeSetBelong(List<Panel> aktuell)
+        {
+
+        }
+
         public void removeTake(List<Panel> aktuell)
         {
             aktuell.RemoveAt(aktuell.Count - 1);
@@ -82,9 +87,15 @@ namespace Knobelprogramm
         {
             Panel re = new Panel();
 
-            if (cache.Size != 0)
+            if (Convert.ToInt32(cache.Size) != 0)
             {
-                
+                switch (btn.Name[6])
+                {
+                    case 'L': changeSetBelong(cache); break;
+                    case 'M': changeSetBelong(cache); break;
+                    case 'R': changeSetBelong(cache); break;
+                    default:break;
+                }
             }
         }
 
